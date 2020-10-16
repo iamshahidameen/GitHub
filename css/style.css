@@ -1,12 +1,28 @@
-h1 {
-  color: red; }
-
-body {
-  background-color: green; }
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
 
 html {
-  margin: 0;
-  padding: 0; }
+  box-sizing: border-box;
+  font-size: 62.5%; }
 
-* {
-  font-size: 1rem; }
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 50%; } }
+
+body {
+  font-family: "Nunito", sans-serif;
+  color: #6D5D4B;
+  font-weight: 300;
+  line-height: 1.6; }
+
+.container {
+  display: grid;
+  grid-template-rows: 80vh repeat(5, min-content);
+  grid-template-columns: [sidebar-start] 80px [sidebar-end gutter-start] 1fr repeat(8, minmax(min-content, 141px)) 1fr [gutter-end]; }
+
+.sidebar {
+  background-color: aquamarine; }
