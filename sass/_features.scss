@@ -2,6 +2,14 @@
     grid-column: container-start / container-end ;
     grid-row:2/3 ;
     display: grid;
-    grid-template-columns: repeat(3, minmax(30rem, min-content));
-    background-color: red;
+    grid-gap: 6rem;
+    grid-template-columns: repeat(3, 1fr);
+    &__box{
+        & p{
+            font-size: 1.7rem;
+        }
+        & h4{
+            color: $color-grey-dark-1;
+        }
+    }
 }
