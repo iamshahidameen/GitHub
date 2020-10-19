@@ -1,0 +1,7 @@
+.features{
+    grid-column: container-start / container-end ;
+    grid-row:2/3 ;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(30rem, min-content));
+    background-color: red;
+}

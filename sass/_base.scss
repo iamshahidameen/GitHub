@@ -46,5 +46,5 @@ body {
 .container {
     display: grid;
     grid-template-rows:80vh repeat(5, min-content);
-    grid-template-columns:[sidebar-start] 80px [sidebar-end gutter-start] 1fr repeat(8, minmax(min-content,141px)) 1fr [gutter-end];
+    grid-template-columns:[sidebar-start] 80px [sidebar-end gutter-start] 1fr [container-start] repeat(8, minmax(min-content,141px)) [container-end] 1fr [gutter-end];
 }

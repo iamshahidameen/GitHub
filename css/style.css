@@ -22,7 +22,28 @@ body {
 .container {
   display: grid;
   grid-template-rows: 80vh repeat(5, min-content);
-  grid-template-columns: [sidebar-start] 80px [sidebar-end gutter-start] 1fr repeat(8, minmax(min-content, 141px)) 1fr [gutter-end]; }
+  grid-template-columns: [sidebar-start] 80px [sidebar-end gutter-start] 1fr [container-start] repeat(8, minmax(min-content, 141px)) [container-end] 1fr [gutter-end]; }
+
+.heading-1 {
+  font-weight: 400; }
+
+.heading-2 {
+  font-weight: 400; }
+
+.heading-3 {
+  font-weight: 400;
+  font-size: 1.9rem; }
+
+.heading-4 {
+  font-weight: 400; }
 
 .sidebar {
-  background-color: aquamarine; }
+  grid-row: 1/-1;
+  background-color: #c69963; }
+
+.features {
+  grid-column: container-start / container-end;
+  grid-row: 2/3;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(30rem, min-content));
+  background-color: red; }
