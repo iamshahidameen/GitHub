@@ -158,11 +158,19 @@ body {
   margin: 15rem 0; }
 
 .home__box {
-  background-color: #f9f7f6; }
-  .home__box .home-img img {
-    width: 100%; }
+  background-color: #f9f7f6;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr); }
+  .home__box .home-img {
+    grid-column: 1 / -1; }
+    .home__box .home-img img {
+      width: 100%;
+      height: 100%; }
   .home__box .home-title {
-    background-color: #101d2c; }
+    background-color: #101d2c;
+    grid-column: 1/-1;
+    grid-row: 1/2; }
 
 .gallery {
   background-color: steelblue;
