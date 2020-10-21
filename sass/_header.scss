@@ -1,4 +1,10 @@
 .header{
+<<<<<<< HEAD
     background-color: $color-grey-dark-1;
     grid-column: gutter-start / col-end 6; 
+=======
+    background-color: orangered;
+    grid-column: gutter-start / col-end 6;
+    grid-row: 1 / 2;
+>>>>>>> e8c80ea833f939a9732e1a06f8b2bfce2363150d
 }

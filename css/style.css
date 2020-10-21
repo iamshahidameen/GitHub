@@ -24,20 +24,64 @@ body {
   grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
   grid-template-columns: [sidebar-start] 8rem [sidebar-end gutter-start] minmax(6rem, 1fr) [container-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [container-end] minmax(6rem, 1fr) [gutter-end]; }
 
-.heading-1 {
+.heading-1, .heading-2, .heading-3, .heading-4 {
+  font-family: "Josefin Sans", sans-serif;
   font-weight: 400; }
+
+.heading-1 {
+  font-size: 4.5rem;
+  color: #f9f7f6;
+  line-height: 1; }
 
 .heading-2 {
-  font-weight: 400; }
+  font-size: 4rem;
+  font-style: italic;
+  line-height: 1; }
+  .heading-2--light {
+    color: #f9f7f6; }
+  .heading-2--dark {
+    color: #54483A; }
 
 .heading-3 {
-  font-weight: 400; }
+  font-size: 1.6rem;
+  color: #c69963;
+  text-transform: uppercase; }
 
 .heading-4 {
-  font-weight: 400;
   font-size: 1.9rem; }
+  .heading-4--light {
+    color: #f9f7f6; }
+  .heading-4--dark {
+    color: #54483A; }
+
+.btn {
+  background-color: #c69963;
+  color: #fff;
+  border: none;
+  border-radius: 0;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding: 1.8rem 3rem;
+  cursor: pointer;
+  transition: all .2s; }
+  .btn:hover {
+    background-color: #B28451; }
+
+.mb-sm {
+  margin-bottom: 2rem; }
+
+.mb-md {
+  margin-bottom: 3rem; }
+
+.mb-lg {
+  margin-bottom: 4rem; }
+
+.mb-hg {
+  margin-bottom: 8rem; }
 
 .sidebar {
+<<<<<<< HEAD
   grid-row: 1 / -1;
   grid-column: sidebar-start / sidebar-end;
   background-color: #c69963; }
@@ -74,4 +118,95 @@ body {
 
 .footer {
   background-color: #101d2c;
+=======
+  background-color: #c69963;
+  grid-row: 1/-1; }
+
+.header {
+  background-color: orangered;
+  grid-column: gutter-start / col-end 6;
+  grid-row: 1 / 2; }
+
+.realtors {
+  background-color: plum;
+  grid-column: col-start 7 / gutter-end;
+  grid-row: 1 / 2; }
+
+.feature__wrapper {
+  grid-column: container-start / container-end;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(25rem, 1fr));
+  grid-gap: 6rem;
+  margin: 15rem 0;
+  align-items: start; }
+  .feature__wrapper .features {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-row-gap: 1.5rem;
+    grid-column-gap: 2.5rem; }
+    .feature__wrapper .features__icon {
+      font-size: 4.5rem;
+      grid-row: 1 / span 2;
+      color: #c69963;
+      transform: translateY(-2rem); }
+    .feature__wrapper .features .features__text {
+      font-size: 1.7rem; }
+
+.story__content {
+  background-color: #f9f7f6;
+  grid-column: col-start 5 / gutter-end;
+  grid-row: 3/4;
+  display: grid;
+  align-content: center;
+  justify-content: start;
+  padding: 6rem 8vw; }
+  .story__content .heading-2 {
+    color: #54483A; }
+  .story__content .story__text {
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-bottom: 4rem; }
+
+.story__pictures {
+  grid-column: gutter-start / col-end 4;
+  background-image: linear-gradient(rgba(198, 153, 99, 0.5), rgba(198, 153, 99, 0.5)), url(../img/back.jpg);
+  background-size: cover;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  align-items: center; }
+  .story__pictures .story__img-1 {
+    width: 100%;
+    grid-row: 2/6;
+    grid-column: 2/6;
+    align-self: center;
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2); }
+  .story__pictures .story__img-2 {
+    width: 115%;
+    grid-row: 4/6;
+    grid-column: 4 /7;
+    z-index: 1;
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2); }
+
+.homes {
+  grid-column: container-start / container-end;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin: 15rem 0; }
+
+.home__box {
+  background-color: #f9f7f6; }
+  .home__box .home-img img {
+    width: 100%; }
+  .home__box .home-title {
+    background-color: #101d2c; }
+
+.gallery {
+  background-color: steelblue;
+  grid-column: gutter-start / gutter-end; }
+
+.footer {
+  background-color: rebeccapurple;
+>>>>>>> e8c80ea833f939a9732e1a06f8b2bfce2363150d
   grid-column: gutter-start / gutter-end; }
