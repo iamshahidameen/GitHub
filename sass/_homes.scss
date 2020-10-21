@@ -1,8 +1,4 @@
 .homes{
-<<<<<<< HEAD
-    background-color: orangered;
-    grid-column: container-start / container-end;
-=======
     grid-column: container-start / container-end;
 
     display: grid;
@@ -19,5 +15,4 @@
     & .home-title{
         background-color: $color-secondary;
     }
->>>>>>> e8c80ea833f939a9732e1a06f8b2bfce2363150d
 }
