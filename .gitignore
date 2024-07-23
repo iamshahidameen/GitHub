@@ -1,2 +1,7 @@
 node_modules
 .next/
+/.next
+/.next/cache
+/.next/cache/webpack
+/.next/cache/webpack/client-development
+
