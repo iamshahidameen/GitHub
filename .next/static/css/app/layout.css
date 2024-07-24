@@ -760,6 +760,15 @@ video {
 .max-w-\[500px\] {
   max-width: 500px;
 }
+.max-w-\[80vw\] {
+  max-width: 80vw;
+}
+.max-w-\[100px\] {
+  max-width: 100px;
+}
+.max-w-\[150px\] {
+  max-width: 150px;
+}
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -777,6 +786,9 @@ video {
 }
 .flex-col-reverse {
   flex-direction: column-reverse;
+}
+.flex-wrap {
+  flex-wrap: wrap;
 }
 .items-center {
   align-items: center;
@@ -926,6 +938,12 @@ video {
 .pr-2 {
   padding-right: 0.5rem;
 }
+.pb-12 {
+  padding-bottom: 3rem;
+}
+.pt-4 {
+  padding-top: 1rem;
+}
 .text-center {
   text-align: center;
 }
@@ -966,11 +984,17 @@ video {
 .font-semibold {
   font-weight: 600;
 }
+.font-extrabold {
+  font-weight: 800;
+}
 .uppercase {
   text-transform: uppercase;
 }
 .capitalize {
   text-transform: capitalize;
+}
+.leading-snug {
+  line-height: 1.375;
 }
 .tracking-\[2px\] {
   letter-spacing: 2px;
@@ -1386,8 +1410,16 @@ video {
     width: 506px;
   }
 
+  .xl\:max-w-none {
+    max-width: none;
+  }
+
   .xl\:flex-row {
     flex-direction: row;
+  }
+
+  .xl\:justify-start {
+    justify-content: flex-start;
   }
 
   .xl\:py-12 {
@@ -1403,8 +1435,21 @@ video {
     padding-top: 2rem;
   }
 
+  .xl\:pb-0 {
+    padding-bottom: 0px;
+  }
+
+  .xl\:pt-0 {
+    padding-top: 0px;
+  }
+
   .xl\:text-left {
     text-align: left;
+  }
+
+  .xl\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
   }
 }
 
