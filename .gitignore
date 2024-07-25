@@ -5,3 +5,4 @@ node_modules
 /.next/cache/webpack
 /.next/cache/webpack/client-development
 
+.next/server/vendor-chunks/@radix-ui.js
