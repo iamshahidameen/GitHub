@@ -724,6 +724,9 @@ video {
 .h-\[56px\] {
   height: 56px;
 }
+.h-\[70px\] {
+  height: 70px;
+}
 .h-\[var\(--radix-select-trigger-height\)\] {
   height: var(--radix-select-trigger-height);
 }
@@ -735,9 +738,6 @@ video {
 }
 .h-screen {
   height: 100vh;
-}
-.h-\[70px\] {
-  height: 70px;
 }
 .max-h-96 {
   max-height: 24rem;
@@ -769,14 +769,14 @@ video {
 .w-\[300px\] {
   width: 300px;
 }
+.w-\[70px\] {
+  width: 70px;
+}
 .w-full {
   width: 100%;
 }
 .w-screen {
   width: 100vw;
-}
-.w-\[70px\] {
-  width: 70px;
 }
 .min-w-\[8rem\] {
   min-width: 8rem;
@@ -1006,6 +1006,9 @@ video {
 .text-\[32px\] {
   font-size: 32px;
 }
+.text-\[42px\] {
+  font-size: 42px;
+}
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -1022,8 +1025,8 @@ video {
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
-.text-\[42px\] {
-  font-size: 42px;
+.font-bold {
+  font-weight: 700;
 }
 .font-extrabold {
   font-weight: 800;
@@ -1034,20 +1037,17 @@ video {
 .font-semibold {
   font-weight: 600;
 }
-.font-bold {
-  font-weight: 700;
-}
 .uppercase {
   text-transform: uppercase;
 }
 .capitalize {
   text-transform: capitalize;
 }
-.leading-snug {
-  line-height: 1.375;
-}
 .leading-none {
   line-height: 1;
+}
+.leading-snug {
+  line-height: 1.375;
 }
 .tracking-\[2px\] {
   letter-spacing: 2px;
@@ -1076,14 +1076,11 @@ video {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
-.text-white\/80 {
-  color: rgb(255 255 255 / 0.8);
-}
-.text-white\/50 {
-  color: rgb(255 255 255 / 0.5);
-}
 .text-white\/60 {
   color: rgb(255 255 255 / 0.6);
+}
+.text-white\/80 {
+  color: rgb(255 255 255 / 0.8);
 }
 .opacity-50 {
   opacity: 0.5;
@@ -1196,11 +1193,6 @@ video {
 
 .placeholder\:text-muted-foreground::placeholder {
   color: hsl(var(--muted-foreground));
-}
-
-.hover\:-rotate-2:hover {
-  --tw-rotate: -2deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .hover\:-rotate-45:hover {
