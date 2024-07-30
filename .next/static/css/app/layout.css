@@ -1061,6 +1061,9 @@ video {
 .p-\[1px\] {
   padding: 1px;
 }
+.p-10 {
+  padding: 2.5rem;
+}
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -1624,6 +1627,10 @@ video {
   .md\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
+
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (min-width: 960px) {
@@ -1684,6 +1691,10 @@ video {
     height: 520px;
   }
 
+  .xl\:h-\[54\%\] {
+    height: 54%;
+  }
+
   .xl\:w-\[498px\] {
     width: 498px;
   }
@@ -1718,6 +1729,10 @@ video {
 
   .xl\:justify-start {
     justify-content: flex-start;
+  }
+
+  .xl\:justify-end {
+    justify-content: flex-end;
   }
 
   .xl\:justify-between {
