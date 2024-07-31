@@ -30,9 +30,10 @@ const Photo = () => {
                         priority
                         quality={100}
                         fill
-                        alt=""
-                        className="object-contain"
+                        alt="profile photo"
+                        className="object-contain rounded-full scale-[0.9]"
                     />
+                    <div className="absolute bottom-0 bg-black w-full transition-all text-lg"></div>
                 </motion.div>
                 <motion.svg
                     className="w-[300px] xl:w-[506px] h-[300px] xl:h-[506px]"

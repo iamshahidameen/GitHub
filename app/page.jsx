@@ -13,15 +13,23 @@ const Home = () => {
                 <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
                     {/* About */}
                     <div className="text-center xl:text-left order-2 xl:order-none">
-                        <span className="text-xl">Software Tester</span>
+                        <span className="text-xl">Sr. Software Engineer</span>
                         <h1 className="h1">
                             Hello I'm <br />{' '}
-                            <span className="text-accent">Tab</span>
+                            <span className="text-accent">Shahid</span>
                         </h1>
                         <p className="max-w-[500px] mb-9 text-white/80">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Hic quos cupiditate consectetur odit harum
-                            laborum saepe
+                            With over 5+ years of industry experience, I am a
+                            Senior Front-end Developer proficient in designing
+                            and building responsive web and mobile applications.
+                            My expertise lies in Front-end JavaScript and
+                            browser APIs, and I have significant experience in
+                            popular frameworks like React and Redux.
+                            Additionally, I have Full-stack experience,
+                            including Node.js, Next.js Remix.js, and GraphQL. I
+                            am known for my problem-solving skills, attention to
+                            detail, and dedication to delivering high-quality
+                            solutions.
                         </p>
                         {/* Social Connects */}
 

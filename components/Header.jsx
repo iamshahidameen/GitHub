@@ -10,14 +10,14 @@ function Header() {
                 {/* Site Logo */}
                 <Link href="/">
                     <h1 className="text-4xl font-semibold">
-                        table<span className="text-accent">.</span>
+                        Shahid<span className="text-accent">.</span>
                     </h1>
                 </Link>
                 {/* Desktop Nav */}
                 <div className="hidden xl:flex items-center gap-8">
                     <Nav />
                     <Link href="/contact">
-                        {/* <Button className="">Hire Me</Button> */}
+                        <Button>Hire Me</Button>
                     </Link>
                 </div>
                 {/* Mobile Nav */}
